@@ -1,0 +1,60 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+<div class="media">
+    <img class="mr-3" src="#" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0">{{movie.title}}</h5>
+      <p>{{movie.synopsis}}</p>
+      <p>Actors : {{movie.actors}}</p>
+      <p>Trailer : {{movie.trailer_url}}</p>
+      <p>Release date : {{movie.release_date}}</p>
+      {% for moviegenre in movie.movie_genres.all %}
+      <p>Genre : {{moviegenre.label}}</p>
+      {%endfor%}
+      <p>Director : {{movie.director}}</p>
+
+
+    </div>
+    {%buttons%}
+      {%if movie.is_out%}
+   
+      <button class="btn btn-secondary">{%trans 'Coming Soon' %}</button>
+      {%else%}
+     
+      <a href="{%url 'movie-rented' movie.id %}" type="submit" class="btn btn-primary">{% trans 'Reserve' %}</a>
+      {%endif%}
+      {%endbuttons%}
+    {% if perms.movie.change_movie %}
+    <a href="{%url 'movie-update' movie.slug%}" class="btn btn-primary">{% trans 'Update'%}</a>
+    {%endif%}
+    {% if perms.movie.delete_movie %}
+    <a class="btn btn-danger" data-toggle="modal" data-target="#deleteModal{{movie.slug}}" href="#">{% trans 'Delete'%}</a>
+  {%endif%}
+</div>
+<!--modal-->
+<div class="modal fade" id="deleteModal{{movie.slug}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">{% trans 'Are you sure you want to delete'%}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{movie.title}}
+        </div>
+        <div class="modal-footer">
+          <form action="{%url 'movie-delete' movie.slug%}" method="post">{% csrf_token %}
+            <input type="submit" class="del btn btn-danger"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of modal-->
+{% endblock %}

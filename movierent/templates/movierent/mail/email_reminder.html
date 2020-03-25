@@ -1,0 +1,18 @@
+{% load i18n %}{% autoescape off %}
+<html>
+<body>
+    <p>Dear {{ username }},</p>
+   <p>looks like you forgot to bring your film back to us that you ordered on {{ site }}.</p>
+    <p>
+        {% trans 'The following films are still in your possession:'%}
+    </p>
+    <p>
+        {% for movie in object_list %}<br />
+        {{movie.title}}{{movie.reserve_date}}
+        {%endfor%}
+        {% trans "Sincerely" %},<br />
+        {{ site.name }} 
+    </p>
+</body>
+</html>
+{% endautoescape %}

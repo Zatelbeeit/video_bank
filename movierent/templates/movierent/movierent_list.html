@@ -1,0 +1,30 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">{% trans'Movie'%}</th>
+            <th scope="col">{% trans'Customer'%}</th>
+            <th scope="col">{% trans'Date out'%}</th>
+            <th scope="col">{% trans'Returned'%}</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for movierent in object_list %}
+      <tr>
+        <th scope="row">{{movierent.id}}</th>
+        <td>{{movierent.movie.title}}</td>
+        <td>{{movierent.customer.user.username}}</td>
+        <td>{{movierent.reserve_date}}</td>
+        <td> {%if movierent.return_date%}to rent{%else%}<a class="btn btn-primary" href="{%url 'movie-rented-list'%}">{% trans'to be returned'%}</a>{%endif%}</td>
+    </tr>
+    {%endfor%}
+      
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<h1>Movie</h1>
+
+<form method="post" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+    {% bootstrap_form form%}
+    {%buttons%}
+    <input type="submit" class="btn btn-primary" value="Save">
+{%endbuttons%}
+</form>
+
+
+{% endblock %}

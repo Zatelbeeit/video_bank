@@ -1,0 +1,24 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{% for movie in object_list %}
+<div class="media">
+    <img class="mr-3" src="#" alt="Generic placeholder image">
+    <div class="media-body">
+      <a href="{%url 'movie-detail' movie.slug%}"><h5 class="mt-0">{{movie.title}}</h5></a>
+      {{movie.synopsis}}
+      {%buttons%}
+      {%if movie.is_out%}
+   
+      <button class="btn btn-secondary">{%trans 'Coming Soon' %}</button>
+      {%else%}
+     
+      <a href="{%url 'movie-rented' movie.id %}" type="submit" class="btn btn-primary">{%trans 'Reserve' %}</a>
+      {%endif%}
+      {%endbuttons%}
+    </div>
+  </div>
+{%endfor%}
+{% endblock %}

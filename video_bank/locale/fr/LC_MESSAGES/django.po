@@ -1,0 +1,505 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-02 14:52+0000\n"
+"PO-Revision-Date: 2020-03-02 11:55+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: video_bank/templates/header.html:4
+msgid "View this category in:"
+msgstr ""
+
+#: video_bank/templates/header.html:13
+msgid "super Video"
+msgstr "super video"
+
+#: video_bank/templates/header.html:20
+#: video_bank/templates/userena/signin_form.html:8
+#: video_bank/templates/userena/signin_form.html:18
+msgid "Signin"
+msgstr "s'identifier"
+
+#: video_bank/templates/header.html:23
+msgid "signout"
+msgstr "déconnexion"
+
+#: video_bank/templates/header.html:26
+msgid "My Movies"
+msgstr "Mes films"
+
+#: video_bank/templates/userena/activate_fail.html:8
+#: video_bank/templates/userena/activate_retry.html:9
+msgid "Account activation failed."
+msgstr "activation de compte échoué"
+
+#: video_bank/templates/userena/activate_fail.html:9
+#: video_bank/templates/userena/activate_retry.html:10
+msgid "Your account could not be activated..."
+msgstr "Votre compte ne pouvait pas être activé"
+
+#: video_bank/templates/userena/activate_fail.html:12
+msgid ""
+"Your account could not be activated. This could be because your activation "
+"link has aged."
+msgstr ""
+"Votre compte ne pouvait pas être activé.  Peut être que le lien d'activation "
+"est mort."
+
+#: video_bank/templates/userena/activate_fail.html:13
+msgid ""
+"Please try signing up again or contact us if you think something went wrong."
+msgstr ""
+"Veuillez essayer de vous identifier de nouveau ou si vous pensez qu'il y a "
+"un souci, contacter nous!"
+
+#: video_bank/templates/userena/activate_retry.html:13
+msgid "Your account could not be activated because activation link is expired."
+msgstr ""
+"Votre compte ne pouvait pas être activé car le lien d'activation a expiré"
+
+#: video_bank/templates/userena/activate_retry.html:14
+msgid "Request a new activation link."
+msgstr "Demande un nouveau lien d'activation"
+
+#: video_bank/templates/userena/activate_retry_success.html:9
+msgid "Account re-activation succeeded."
+msgstr "succès! Réactivation de votre compte"
+
+#: video_bank/templates/userena/activate_retry_success.html:10
+msgid "Account re-activation"
+msgstr "réactivation de votre compte"
+
+#: video_bank/templates/userena/activate_retry_success.html:13
+msgid "You requested a new activation of your account.."
+msgstr "Vous avez demandé une nouvelle activation de votre compte"
+
+#: video_bank/templates/userena/activate_retry_success.html:14
+#: video_bank/templates/userena/signup_complete.html:14
+msgid ""
+"You have been sent an e-mail with an activation link to the supplied email."
+msgstr "Vous allez recevoir un email avec un lien d'activation vers l'email"
+
+#: video_bank/templates/userena/activate_retry_success.html:15
+#: video_bank/templates/userena/signup_complete.html:15
+#, python-format
+msgid ""
+"We will store your signup information for %(userena_activation_days)s days "
+"on our server. "
+msgstr ""
+"Nous allons gardé vos informations d'identification pour "
+"%(userena_activation_days)s de  jours sur nos serveurs"
+
+#: video_bank/templates/userena/disabled.html:8
+msgid "Disabled account"
+msgstr "compte desactivé"
+
+#: video_bank/templates/userena/disabled.html:9
+msgid "Your account has been disabled"
+msgstr "Votre compte a été désactivé"
+
+#: video_bank/templates/userena/disabled.html:11
+msgid "It seems your account has been disabled."
+msgstr "Il semble que votre compte a été désactivé"
+
+#: video_bank/templates/userena/disabled.html:12
+msgid ""
+"If you feel that injustice has been done to you, feel free to contact the "
+"administrators to find out why"
+msgstr ""
+"Si vous pensez que ce n'est pas juste votre traitement, merci de contacter "
+"un administrateur pour en savoir plus"
+
+#: video_bank/templates/userena/email_change_complete.html:8
+msgid "Email verification"
+msgstr "Vérification d'email"
+
+#: video_bank/templates/userena/email_change_complete.html:9
+msgid "Confirm your new email"
+msgstr "Confirmer votre nouveau email"
+
+#: video_bank/templates/userena/email_change_complete.html:12
+#, python-format
+msgid "You have received an email at %(email)s."
+msgstr "Vous avez reçu un email à l'adresse %(email)s."
+
+#: video_bank/templates/userena/email_change_complete.html:13
+#, python-format
+msgid ""
+"To associate this email address with your account (%(username)s) click on "
+"the link provided in this email."
+msgstr ""
+"Afin d'associer cet email avec votre compte (%(username)s) cliquer sur le "
+"lien dans cet email"
+
+#: video_bank/templates/userena/email_confirm_complete.html:8
+msgid "Email changed!"
+msgstr "Email modifié"
+
+#: video_bank/templates/userena/email_confirm_complete.html:10
+msgid "New email"
+msgstr "Nouveau email"
+
+#: video_bank/templates/userena/email_confirm_complete.html:12
+#, python-format
+msgid ""
+"Your new email address is saved. You can continue using %(site)s with this "
+"email."
+msgstr ""
+"Votre email a été sauvegardé. Vous pouvez continuer à utiliser %(site)s avec "
+"cet email."
+
+#: video_bank/templates/userena/email_confirm_fail.html:8
+msgid "Email verification failed."
+msgstr "Vérifiacation d'email échoué"
+
+#: video_bank/templates/userena/email_confirm_fail.html:9
+#: video_bank/templates/userena/email_confirm_fail.html:12
+msgid "Your email could not be verified..."
+msgstr "Nous pouvons pas vérifier votre email"
+
+#: video_bank/templates/userena/email_confirm_fail.html:13
+msgid "You could try changing it again in your account settings."
+msgstr ""
+"Vous pouvez essayer de le changer de nouveau deans vos settings du compte"
+
+#: video_bank/templates/userena/email_form.html:6
+#, python-format
+msgid "You sure this is you??   %(username)s"
+msgstr "C'est bien vous?? %(username)s"
+
+#: video_bank/templates/userena/email_form.html:12
+#: video_bank/templates/userena/password_form.html:14
+#: video_bank/templates/userena/profile_detail.html:19
+#: video_bank/templates/userena/profile_form.html:14
+msgid "View profile"
+msgstr "Votre profil"
+
+#: video_bank/templates/userena/email_form.html:15
+#: video_bank/templates/userena/password_form.html:17
+#: video_bank/templates/userena/profile_detail.html:22
+#: video_bank/templates/userena/profile_form.html:17
+msgid "Edit details"
+msgstr "Editer vos informations"
+
+#: video_bank/templates/userena/email_form.html:18
+#: video_bank/templates/userena/password_form.html:4
+#: video_bank/templates/userena/password_form.html:20
+#: video_bank/templates/userena/password_form.html:33
+#: video_bank/templates/userena/profile_detail.html:25
+#: video_bank/templates/userena/profile_form.html:20
+msgid "Change password"
+msgstr "Changez votre mot de passe"
+
+#: video_bank/templates/userena/email_form.html:21
+#: video_bank/templates/userena/email_form.html:29
+#: video_bank/templates/userena/password_form.html:23
+#: video_bank/templates/userena/profile_detail.html:28
+#: video_bank/templates/userena/profile_form.html:23
+msgid "Change email"
+msgstr "Modifier email"
+
+#: video_bank/templates/userena/emails/activation_email_message.html:4
+#: video_bank/templates/userena/emails/confirmation_email_message_new.html:4
+#, python-format
+msgid "Dear %(username)s,</p>"
+msgstr "Cher %(username)s,</p>"
+
+#: video_bank/templates/userena/emails/activation_email_message.html:5
+#, python-format
+msgid "<p>Thank you for signing up at %(site)s.</p>"
+msgstr "<p>Merci d'avoir rejoint %(site)s.</p>"
+
+#: video_bank/templates/userena/emails/activation_email_message.html:7
+#: video_bank/templates/userena/emails/activation_email_message.txt:6
+msgid "To activate your account you should click on the link below:"
+msgstr "Afin d'activer votre compte vous pouvez cliquer sur le lien dessous"
+
+#: video_bank/templates/userena/emails/activation_email_message.html:11
+#: video_bank/templates/userena/emails/activation_email_message.txt:10
+#: video_bank/templates/userena/emails/confirmation_email_message_new.html:13
+#: video_bank/templates/userena/emails/confirmation_email_message_new.txt:12
+#: video_bank/templates/userena/emails/confirmation_email_message_old.html:13
+#: video_bank/templates/userena/emails/confirmation_email_message_old.txt:8
+#: video_bank/templates/userena/emails/password_reset_message.html:20
+#: video_bank/templates/userena/emails/password_reset_message.txt:14
+msgid "Thanks for using our site!"
+msgstr "Merci de votre confiance!"
+
+#: video_bank/templates/userena/emails/activation_email_message.html:12
+#: video_bank/templates/userena/emails/activation_email_message.txt:12
+#: video_bank/templates/userena/emails/confirmation_email_message_new.html:14
+#: video_bank/templates/userena/emails/confirmation_email_message_new.txt:14
+#: video_bank/templates/userena/emails/confirmation_email_message_old.html:16
+#: video_bank/templates/userena/emails/confirmation_email_message_old.txt:10
+#: video_bank/templates/userena/emails/password_reset_message.html:21
+#: video_bank/templates/userena/emails/password_reset_message.txt:16
+msgid "Sincerely"
+msgstr "Cordialement"
+
+#: video_bank/templates/userena/emails/activation_email_message.txt:2
+#: video_bank/templates/userena/emails/confirmation_email_message_new.txt:2
+#: video_bank/templates/userena/emails/confirmation_email_message_old.html:4
+#: video_bank/templates/userena/emails/confirmation_email_message_old.txt:2
+#, python-format
+msgid "Dear %(username)s,"
+msgstr "Bonjour %(username)s,"
+
+#: video_bank/templates/userena/emails/activation_email_message.txt:4
+#, python-format
+msgid "Thank you for signing up at %(site)s."
+msgstr "Merci d'être abooné à %(site)s."
+
+#: video_bank/templates/userena/emails/activation_email_subject.txt:2
+#, python-format
+msgid "Your signup at %(site)s."
+msgstr "Votre inscritpion à %(site)s."
+
+#: video_bank/templates/userena/emails/confirmation_email_message_new.html:6
+#: video_bank/templates/userena/emails/confirmation_email_message_new.txt:4
+#, python-format
+msgid "You requested a change of your email address at %(site)s."
+msgstr "Vous avez demandé une modification de votre email à %(site)s."
+
+#: video_bank/templates/userena/emails/confirmation_email_message_new.html:9
+#: video_bank/templates/userena/emails/confirmation_email_message_new.txt:7
+msgid "Please confirm this email address by clicking on the link below:"
+msgstr "Veuillez confirmer votre email en cliquant sur le lien dessous"
+
+#: video_bank/templates/userena/emails/confirmation_email_message_old.html:6
+#: video_bank/templates/userena/emails/confirmation_email_message_old.txt:4
+#, python-format
+msgid "There was a request to change your email address at %(site)s."
+msgstr "Il y a eu une demande de modification de votre email à %(site)s."
+
+#: video_bank/templates/userena/emails/confirmation_email_message_old.html:10
+#: video_bank/templates/userena/emails/confirmation_email_message_old.txt:6
+#, python-format
+msgid ""
+"An email has been send to %(new_email)s which contains a verification link. "
+"Click on the link in this email to activate it."
+msgstr ""
+"Un email a été envoyé à  %(new_email)s contenant un lien de vérifiaction.  "
+"Cliquez sur le lien dans le mail pour l'activation."
+
+#: video_bank/templates/userena/emails/confirmation_email_subject_new.html:4
+#: video_bank/templates/userena/emails/confirmation_email_subject_new.txt:2
+#, python-format
+msgid "Email verification for %(site)s."
+msgstr "Vérification d'email pour %(site)s."
+
+#: video_bank/templates/userena/emails/confirmation_email_subject_old.txt:2
+#, python-format
+msgid "A request to change your email address is made at %(site)s."
+msgstr "Une demande pour modifier votre email a été fait à %(site)s."
+
+#: video_bank/templates/userena/emails/password_reset_message.html:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset\n"
+"            for your user account at %(site_name)s"
+msgstr ""
+"Vous recevez cet email parce que vous avez demandé la réinitialisation de "
+"votre mot de passe\n"
+"            pour votre compte à %(site_name)s"
+
+#: video_bank/templates/userena/emails/password_reset_message.html:9
+#: video_bank/templates/userena/emails/password_reset_message.txt:5
+msgid "Please go to the following page and choose a new password:"
+msgstr "Veuillez aller à la page suivante et choisir un nouveau mot de passe"
+
+#: video_bank/templates/userena/emails/password_reset_message.html:17
+#, python-format
+msgid "Your username, in case you've forgotten: %(username)s"
+msgstr "Votre nom d'utilisateur si vous avez oublié: %(username)s"
+
+#: video_bank/templates/userena/emails/password_reset_message.txt:2
+#, python-format
+msgid ""
+"You're receiving this e-mail because you requested a password reset\n"
+"for your user account at %(site_name)s"
+msgstr ""
+"Vous recevez cet email parce que vous avez demandé la réinitialisation de "
+"votre mot de passe\n"
+"pour votre compte à %(site_name)s"
+
+#: video_bank/templates/userena/emails/password_reset_message.txt:10
+#, python-format
+msgid ""
+"\n"
+"Your username, in case you've forgotten: %(username)s\n"
+msgstr ""
+"\n"
+"Votre nom d'utilisateur si vous avez oublié: %(username)s\n"
+
+#: video_bank/templates/userena/password_complete.html:8
+msgid "Password changed"
+msgstr "Mot de passe modifié"
+
+#: video_bank/templates/userena/password_complete.html:9
+msgid "Your password has been changed"
+msgstr "Votre mot de passe a été modifié"
+
+#: video_bank/templates/userena/password_complete.html:12
+msgid "From now on you can use your new password to signin"
+msgstr ""
+"Désormais vous pouvez utiliser votre nouveau mot de passe pour s'identifier"
+
+#: video_bank/templates/userena/password_form.html:8
+#, python-format
+msgid "You sure this is you?  %(username)s"
+msgstr "Vous êtes sur c'est vous? %(username)s"
+
+#: video_bank/templates/userena/password_reset_complete.html:9
+msgid "Password reset"
+msgstr "Mot de passe réinitialisé"
+
+#: video_bank/templates/userena/password_reset_complete.html:10
+msgid "Your password has been reset"
+msgstr "Votre mot de passe a été réinitialisé"
+
+#: video_bank/templates/userena/password_reset_complete.html:13
+#, python-format
+msgid ""
+"You can now <a href=\"%(signin_url)s\">signin</a> with your new password."
+msgstr ""
+"Désormais vous pouvez<a href=\"%(signin_url)s\">vous identifiez</a> avec "
+"votre nouveau mot de passe"
+
+#: video_bank/templates/userena/password_reset_confirm_form.html:8
+#: video_bank/templates/userena/password_reset_confirm_form.html:22
+#: video_bank/templates/userena/password_reset_form.html:9
+msgid "Reset password"
+msgstr "réinitialisation du mot de passe"
+
+#: video_bank/templates/userena/password_reset_done.html:8
+#: video_bank/templates/userena/password_reset_done.html:9
+msgid "Password reset email sent"
+msgstr "Email de réinitialisation a été envoyé"
+
+#: video_bank/templates/userena/password_reset_done.html:12
+msgid ""
+"An e-mail has been sent to you which explains how to reset your password."
+msgstr ""
+"Un email a été envoyé pour vous expliquer comment réinitialiser votre mot de "
+"passe"
+
+#: video_bank/templates/userena/password_reset_form.html:18
+msgid "Send password"
+msgstr "Envoyez mot de passe"
+
+#: video_bank/templates/userena/profile_detail.html:8
+#, python-format
+msgid "%(username)s's profile."
+msgstr "Profil de %(username)s."
+
+#: video_bank/templates/userena/profile_detail.html:38
+msgid "Your mugshot"
+msgstr "Ta face"
+
+#: video_bank/templates/userena/profile_detail.html:43
+msgid "Name"
+msgstr "Nom"
+
+#: video_bank/templates/userena/profile_detail.html:47
+msgid "Email"
+msgstr "email"
+
+#: video_bank/templates/userena/profile_detail.html:51
+msgid "Age"
+msgstr "Age"
+
+#: video_bank/templates/userena/profile_detail.html:55
+msgid "Website"
+msgstr "site web"
+
+#: video_bank/templates/userena/profile_detail.html:59
+msgid "Location"
+msgstr "Lieux"
+
+#: video_bank/templates/userena/profile_detail.html:63
+msgid "About me"
+msgstr "Qui je suis"
+
+#: video_bank/templates/userena/profile_form.html:5
+msgid "Account setup"
+msgstr "Création de compte"
+
+#: video_bank/templates/userena/profile_form.html:7
+#, python-format
+msgid "Hope this is you: %(username)s"
+msgstr "J'espère que c'est vous! %(username)s"
+
+#: video_bank/templates/userena/profile_form.html:34
+msgid "Save changes"
+msgstr "Sauvegarder les modifications"
+
+#: video_bank/templates/userena/profile_list.html:8
+msgid "Profiles"
+msgstr "Profils"
+
+#: video_bank/templates/userena/profile_list.html:33
+msgid "previous"
+msgstr "Pécédent"
+
+#: video_bank/templates/userena/profile_list.html:37
+#, python-format
+msgid ""
+"\n"
+"      Page %(page)s of %(num_pages)s\n"
+"      "
+msgstr ""
+"\n"
+"       %(page)s de %(num_pages)s pages\n"
+"      "
+
+#: video_bank/templates/userena/profile_list.html:43
+msgid "next"
+msgstr "Suivant"
+
+#: video_bank/templates/userena/signin_form.html:20
+msgid "Forgot your password?"
+msgstr "Oublié votre mot de passe?"
+
+#: video_bank/templates/userena/signout.html:8
+msgid "Signed out"
+msgstr "Déconnexion"
+
+#: video_bank/templates/userena/signout.html:9
+msgid "You have been signed out"
+msgstr "Vous avez été déconnecté"
+
+#: video_bank/templates/userena/signout.html:12
+msgid "You have been signed out. Till we meet again."
+msgstr "Voous avez été déconnecté, A la prochaine"
+
+#: video_bank/templates/userena/signup_complete.html:5
+msgid "Signup almost done!"
+msgstr "presque fini!!"
+
+#: video_bank/templates/userena/signup_complete.html:7
+#: video_bank/templates/userena/signup_form.html:9
+#: video_bank/templates/userena/signup_form.html:18
+#: video_bank/templates/userena/signup_form.html:35
+msgid "Signup"
+msgstr "s'abonner"
+
+#: video_bank/templates/userena/signup_complete.html:11
+msgid "Thank you for signing up with us!"
+msgstr "Merci d'avoir enrégistré avec nous!!"
+
+#: video_bank/templates/userena/signup_complete.html:17
+msgid "You can now use the supplied credentials to signin."
+msgstr "Vous pouvez désormais utiliser les infos fourni pour s'identifier"

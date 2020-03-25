@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load i18n %}{% load bootstrap4 %}
+
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{% block content_title %}<h2 class="text-center mb-3">{% trans 'Profiles' %}</h2>{% endblock %}
+
+{% block content %}
+<div class="card-group w-50 m-auto">
+  {% for profile in profile_list %}
+  <div class="card d-flex justify-content-center">
+    <a href="{% url 'userena_profile_detail' profile.user.username %}">
+      <img class="card-img-top w-25 " src="{{ profile.get_mugshot_url }}" />
+    </a>
+
+    <div class="card-body">
+      <h5 class="card-title">{{ profile.user.username }}</h5>
+     {%buttons%} 
+      <a href="{% url 'userena_profile_detail' profile.user.username %}" class="btn btn-primary">Profile Detail</a>
+    {%endbuttons%}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% if is_paginated %}
+<div class="pagination">
+  <span class="step-links">
+    {% if page_obj.has_previous %}
+    <a href="{% url 'userena_profile_list_paginated' page_obj.previous_page_number %}">{% trans 'previous' %}</a>
+    {% endif %}
+
+    <span class="current">
+      {% blocktrans with page_obj.number as page and page_obj.paginator.num_pages as num_pages %}
+      Page {{ page }} of {{ num_pages }}
+      {% endblocktrans %}
+    </span>
+
+    {% if page_obj.has_next %}
+    <a href="{% url 'userena_profile_list_paginated'  page_obj.next_page_number %}">{% trans 'next' %}</a>
+    {% endif %}
+  </span>
+</div>
+{% endif %}
+{% endblock %}

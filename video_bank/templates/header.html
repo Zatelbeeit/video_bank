@@ -1,0 +1,31 @@
+{% load i18n %}
+{% get_available_languages as languages %}
+
+{% trans "View this category in:" %}
+{% for lang_code, lang_name in languages %}
+    {% language lang_code %}
+    <a href="{% url 'home' %}">{{ lang_name }}</a>
+    {% endlanguage %}
+{% endfor %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="{%url 'home'%}" class="navbar-brand">{%trans "super Video" %}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{%url '/customers/'%}">{%trans "Signin" %}<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">{%trans "signout" %}<span class="sr-only">(current)</span></a>
+        </li>   
+        <li class="nav-item active">
+          <a class="nav-link" href="#">{%trans "My Movies" %}<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
